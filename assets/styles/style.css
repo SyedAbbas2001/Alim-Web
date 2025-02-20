@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+.banner{
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/darbar.webp) no-repeat center center;
+    height: 300px;
+    width: 100%;
+   background-size: cover;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.banner img{
+    width: 130px;
+    margin: 15px 0px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.breadcrumb-item{
+    color: #fff !important;
+    font-size: 18px;
+}
+.breadcrumb{
+    color: #fff !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: #fff;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+.active{
+    color: #D1AD3C !important;
+}
+.banner h1{
+    font-size: 51px;
+    font-weight: 400;
+}
+.event-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(27, 22, 57, 0.122) 0px 48px 100px 0px;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.container{
+    max-width: 1200px;
+}
+
+.event-image {
+    position: relative;
+}
+
+.event-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.event-date {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #CBA940;
+    color: white;
+    padding: 8px 22px;
+    border-bottom-right-radius: 6px;
+    text-align: center;
+    opacity: 0.9;
+    border-top-left-radius: 6px ;
+}
+
+.event-date .day {
+    font-size: 22px;
+    display: block;
+    margin-bottom: -7px;
+}
+
+.event-date .month {
+    font-size: 20px;
+}
+
+
+.event-countdown {
+    display: flex;
+    justify-content: space-around;
+    background: #CBA940;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 18px;
+}
+
+
+.event-details {
+    padding: 30px;
+    text-align: left;
+}
+
+.event-title {
+    font-size: 22px;
+    color: #35387c;
+}
+
+.event-location {
+    font-size: 14px;
+    color: #525252;
+    display: flex;
+    align-items: center;
+}
+
+.event-location i {
+    color: #d4a431;
+    margin-right: 5px;
+}
+
+.event-time {
+    margin-left: 10px;
+}
+
+.event-description {
+    font-size: 16px;
+    color: #555;
+}
+.card-section{
+    padding: 60px 10px 10px;
+}
+
+.card-btn{
+    background-color: #CBA940;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+}
+.styled-background {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #e1b54c, #d4a431);
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px 40px;
+    margin-bottom: 50px;
+
+}
+
+.styled-background::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 180px;
+    height: 100%;
+    background: #d09e29;
+    clip-path: polygon(100% 0, 100% 100%, 30% 100%, 0 50%, 30% 0);
+}
+.styled-background button{
+background-color: #2A486C;
+padding: 10px 60px;
+border-radius: 25px;
+color: #fff;
+z-index: 30;
+position: relative;
+border: none;
+font-size: 22px;
+
+}
+.dtail-img img{
+    height: 380px;
+    border-radius: 5px;
+}
+.alim-para{
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: rgb(69, 69, 69);
+    word-spacing: 2.5px;
+}
+.alim-heading{
+    color: #2A486C;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.booking-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.booking-form h3 {
+    color: #003366;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #002244;
+}
