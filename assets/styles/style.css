@@ -384,7 +384,7 @@ a:hover {
 }
 .wavy-border {
   height: 20px;
-  background-image: url("/assets/images/wavv.png");
+  background-image: url("../images/wavv.png");
   background-repeat: repeat;
 }
 
