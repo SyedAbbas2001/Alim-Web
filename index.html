@@ -39,8 +39,12 @@
             <!-- Contact & Donation -->
             <div class="col-6 col-md-8 d-flex justify-content-end align-items-center contact-section">
                 <div class="email d-none d-md-flex align-items-center">
-                    <i class="fas fa-envelope"></i> 
-                    <span>Email: <a href="mailto:info@bearcreekic.org">info@bearcreekic.org</a></span>
+                    <div class="email-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span class="email-text">
+                        Email: <a href="mailto:info@bearcreekic.org">info@bearcreekic.org</a>
+                    </span>
                 </div>
                 <button class="donate-btn">Make a Donation</button>
                 <img src="assets/images/qrr.png" alt="QR Code" class="qr-code d-none d-md-block">
@@ -58,12 +62,47 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="nav flex-column flex-lg-row">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Our Services</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a href="#" class="nav-link dropdown-toggle" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="#">Management</a></li>
+                        <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Imam</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="#">Community Hall</a></li>
+                        <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Counseling, Islamic <br>Consultation & Nikah</a></li>
+                        <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Sadaqa & Zakat</a></li>
+                        <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Shifa Al-Mustafa Health <br> Clinic</a></li>
+                        <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Weekend Islamic School</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a href="#" class="nav-link dropdown-toggle" id="eventDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Event <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="eventDropdown">
+                        <li><a class="dropdown-item" href="#">Event</a></li>
+                        <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Calendar</a></li>
+                        <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Gallery</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="#" class="nav-link">Ramadan Events</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Daily Classes</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Every Sunday</a></li>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a href="#" class="nav-link dropdown-toggle" id="sundayDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Every Sunday <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="sundayDropdown">
+                        <li><a class="dropdown-item" href="#">Quran Study</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
             </ul>
         </div>
@@ -260,10 +299,10 @@
             <div class="styled-background">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-md-9">
-                        <h1>
+                        <h1 class="z">
                             Join, Participate In Our Events
                         </h1>
-                        <p>Your Ideas For Noble Events - events@example.com</p>
+                        <p class="z">Your Ideas For Noble Events - events@example.com</p>
                     </div>
                     <div class="col-md-3 col-sm-12">
                         <div>
@@ -275,7 +314,7 @@
         </div>
     </section>
     <footer>
-        <div class="container">
+        <div class="">
             <div class="footer-container">
                  <div class="row">
                     <div class="col-md-4">
@@ -283,7 +322,7 @@
                             <div class="footer-circle">
                                  <img src="https://www.bearcreekic.org/wp-content/uploads/isgh-150x150.png" alt="footer icon">
                             </div>
-                            <p>Islamic Society of Greater Houston</p>
+                            <p class="text-center">Islamic Society of Greater Houston</p>
                          
                         </div>
                     </div>
@@ -299,7 +338,7 @@
                     </div>
                     <div class="col-md-3">
                        <div class="px-3">
-                        <h3>Follow US</h3>
+                        <h3 class="res">Follow US</h3>
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-youtube"></i>
                        </div>

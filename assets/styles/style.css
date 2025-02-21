@@ -465,9 +465,16 @@ footer{
     bottom: 80px;
     margin-bottom: -30px;
     text-align: left;
- 
-    
+    max-width: 1300px;
+    margin: 0 auto;
 }
+.nav-item.dropdown:hover .nav-link {
+    color: #008080 !important; 
+}
+.dropdown-menu .dropdown-item:hover {
+    color: #FFA500 !important; 
+} 
+
 .footer-container .fas{
     color: #a57205;
     margin-right: 6px;
@@ -478,11 +485,66 @@ footer{
 .dot-divider{
     border: 1px dashed #fff;
 }
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    }
+    
+    .email-icon {
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted #c2a97f; 
+    border-radius: 50%; 
+    }
+    
+    .email-icon i {
+    color: rgb(34, 33, 33); 
+    font-size: 16px;
+    }
+    
+    .email-text {
+    font-size: 16px;
+    color: #7a5b28; 
+    }
+    .dropdown-menu .dropdown-item {
+        padding: 10px 15px; 
+        transition: all 0.2s ease-in-out;
+   }
+   .navbar .dropdown-toggle::after {
+    display: none !important;
+}
+.fa-chevron-down{
+    font-size: 13px;
+    font-weight: 600;
+}
+    .email-text a {
+    text-decoration: none;
+    color: #d4af37; 
+    }
+    .dropdown-item:focus, .dropdown-item:hover {
+        color: #1e2125;
+        background-color: transparent !important; 
+    }
+    .email-text a:hover {
+    color: #b88c2a; 
+    }
 .footer-circle{
     height: 100px;
     width: 100px;
     border-radius: 50%;
     margin-bottom: 20px;
+}
+.dropdown-hover:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.z{
+    position: relative;
+    z-index: 29;
 }
 .footer-circle img{
     height: 100%;
@@ -510,5 +572,8 @@ margin-top: 30px;
 .donate-btn{
     padding: 10px 10px;
     font-size: 13px;
+}
+.styled-background{
+    height: 100%;
 }
   }
