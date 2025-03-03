@@ -1,195 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Document</title>
 </head>
+
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center px-3 py-2 flex-wrap">
+                <div class="left">
+                    <i class="fas fa-map-marker-alt"></i> 17250 Coventry Park Dr, Houston, TX 77084 &nbsp;|&nbsp;
+                    <i class="far fa-clock"></i> 6 am–10 pm
+                </div>
+                <div class="right d-flex align-items-center">
+                    <i class="fas fa-mosque"></i> Prayer Times &nbsp;&nbsp;
+                    Follow us &nbsp;&nbsp;
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <!-- Logo -->
+                <div class="col-6 col-md-4 text-left">
+                    <img src="assets/images/main-logo.png" alt="Bear Creek Islamic Center" class="img-fluid logo">
+                </div>
+
+                <!-- Contact & Donation -->
+                <div class="col-6 col-md-8 d-flex justify-content-end align-items-center contact-section">
+                    <div class="email d-none d-md-flex align-items-center">
+                        <div class="email-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span class="email-text">
+                            Email: <a href="mailto:info@bearcreekic.org">info@bearcreekic.org</a>
+                        </span>
+                    </div>
+                    <button class="donate-btn">Make a Donation</button>
+                    <img src="assets/images/qrr.png" alt="QR Code" class="qr-code d-none d-md-block">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                style="margin-left: auto;padding-top: 10px;">
+                <span class="navbar-toggler-icon">&#9776;</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="nav flex-column flex-lg-row">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#" class="nav-link dropdown-toggle" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Management</a></li>
+                            <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Imam</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Services <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Community Hall</a></li>
+                            <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Counseling,
+                                    Islamic <br>Consultation & Nikah</a></li>
+                            <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Sadaqa & Zakat</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Shifa Al-Mustafa
+                                    Health <br> Clinic</a></li>
+                            <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Weekend Islamic
+                                    School</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#" class="nav-link dropdown-toggle" id="eventDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Event <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventDropdown">
+                            <li><a class="dropdown-item" href="#">Event</a></li>
+                            <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Calendar</a></li>
+                            <li><a class="dropdown-item" href="#" style="border-top: 1px solid gray;">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ramadan Events</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Daily Classes</a></li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#" class="nav-link dropdown-toggle" id="sundayDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Every Sunday <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="sundayDropdown">
+                            <li><a class="dropdown-item" href="#">Quran Study</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wavy-border"></div>
+
     <section>
         <div class="banner">
-          <h1>Upcoming Events</h1>
-          <img src="assets/images/shape.png" alt="">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Upcoming Events</li>
-            </ol>
-          </nav>
+            <h1>Upcoming Events</h1>
+            <img src="assets/images/shape.png" alt="">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Upcoming Events</li>
+                </ol>
+            </nav>
         </div>
     </section>
     <section>
         <div class="card-section">
-           <div class="container">
-          <div class="row my-5">
-            <div class="col-md-4 col-sm-12">
-                <div class="event-card">
-                   
-                    <div class="event-image">
-                        <img src="assets/images/quran.webp" alt="Quran Event">
-                        <div class="event-date">
-                            <span class="day">27</span>
-                            <span class="month">Dec</span>
-                        </div>
-                    </div>
-            
-                 
-                    <div class="event-countdown">
-                    </div>
-            
-                
-                    <div class="event-details">
-                        <h4 class="event-title">Quran, Hadith Daily Life</h4>
-                        <p class="event-location">
-                            <i class="fas fa-map-marker-alt"></i> Park Lane, London 
-                            <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
-                        </p>
-                        <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-4 col-sm-12">
+                        <a href="detail.html">
+                        <div class="event-card">
 
-                        <button class="card-btn">Register Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="event-card">
-                   
-                    <div class="event-image">
-                        <img src="assets/images/quran.webp" alt="Quran Event">
-                        <div class="event-date">
-                            <span class="day">27</span>
-                            <span class="month">Dec</span>
+                            <div class="event-image">
+                                <img src="assets/images/quran.webp" alt="Quran Event">
+                                <div class="event-date">
+                                    <span class="day">27</span>
+                                    <span class="month">Dec</span>
+                                    fa-envelope      </div>
+                            </div>
+                            <div class="event-countdown">
+                            </div>
+                            <div class="event-details">
+                                <h4 class="event-title">Quran, Hadith Daily Life</h4>
+                                <p class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i> Park Lane, London
+                                    <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
+                                </p>
+                                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do ...</p>
+                                <button class="card-btn">Register Now</button>
+                            </div>
                         </div>
+                        </a>
                     </div>
-            
-                 
-                    <div class="event-countdown">
-                    </div>
-            
-                
-                    <div class="event-details">
-                        <h4 class="event-title">Quran, Hadith Daily Life</h4>
-                        <p class="event-location">
-                            <i class="fas fa-map-marker-alt"></i> Park Lane, London 
-                            <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
-                        </p>
-                        <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
-                        <button class="card-btn">Register Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="event-card">
-                   
-                    <div class="event-image">
-                        <img src="assets/images/quran.webp" alt="Quran Event">
-                        <div class="event-date">
-                            <span class="day">27</span>
-                            <span class="month">Dec</span>
+                    <div class="col-md-4 col-sm-12">
+                        <a href="detail.html">
+                        <div class="event-card">
+
+                            <div class="event-image">
+                                <img src="assets/images/quran.webp" alt="Quran Event">
+                                <div class="event-date">
+                                    <span class="day">27</span>
+                                    <span class="month">Dec</span>
+                                    fa-envelope      </div>
+                            </div>
+                            <div class="event-countdown">
+                            </div>
+                            <div class="event-details">
+                                <h4 class="event-title">Quran, Hadith Daily Life</h4>
+                                <p class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i> Park Lane, London
+                                    <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
+                                </p>
+                                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do ...</p>
+                                <button class="card-btn">Register Now</button>
+                            </div>
                         </div>
+                        </a>
                     </div>
-            
-                 
-                    <div class="event-countdown">
-                    </div>
-            
-                
-                    <div class="event-details">
-                        <h4 class="event-title">Quran, Hadith Daily Life</h4>
-                        <p class="event-location">
-                            <i class="fas fa-map-marker-alt"></i> Park Lane, London 
-                            <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
-                        </p>
-                        <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
-                        <button class="card-btn">Register Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="event-card">
-                   
-                    <div class="event-image">
-                        <img src="assets/images/quran.webp" alt="Quran Event">
-                        <div class="event-date">
-                            <span class="day">27</span>
-                            <span class="month">Dec</span>
+                    <div class="col-md-4 col-sm-12">
+                        <a href="detail.html">
+                        <div class="event-card">
+
+                            <div class="event-image">
+                                <img src="assets/images/quran.webp" alt="Quran Event">
+                                <div class="event-date">
+                                    <span class="day">27</span>
+                                    <span class="month">Dec</span>
+                                    fa-envelope      </div>
+                            </div>
+                            <div class="event-countdown">
+                            </div>
+                            <div class="event-details">
+                                <h4 class="event-title">Quran, Hadith Daily Life</h4>
+                                <p class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i> Park Lane, London
+                                    <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
+                                </p>
+                                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do ...</p>
+                                <button class="card-btn">Register Now</button>
+                            </div>
                         </div>
+                        </a>
                     </div>
-            
-                 
-                    <div class="event-countdown">
-                    </div>
-            
-                
-                    <div class="event-details">
-                        <h4 class="event-title">Quran, Hadith Daily Life</h4>
-                        <p class="event-location">
-                            <i class="fas fa-map-marker-alt"></i> Park Lane, London 
-                            <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
-                        </p>
-                        <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
-                        <button class="card-btn">Register Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="event-card">
-                   
-                    <div class="event-image">
-                        <img src="assets/images/quran.webp" alt="Quran Event">
-                        <div class="event-date">
-                            <span class="day">27</span>
-                            <span class="month">Dec</span>
+                    <div class="col-md-4 col-sm-12">
+                        <a href="detail.html">
+                        <div class="event-card">
+
+                            <div class="event-image">
+                                <img src="assets/images/quran.webp" alt="Quran Event">
+                                <div class="event-date">
+                                    <span class="day">27</span>
+                                    <span class="month">Dec</span>
+                                    fa-envelope      </div>
+                            </div>
+                            <div class="event-countdown">
+                            </div>
+                            <div class="event-details">
+                                <h4 class="event-title">Quran, Hadith Daily Life</h4>
+                                <p class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i> Park Lane, London
+                                    <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
+                                </p>
+                                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do ...</p>
+                                <button class="card-btn">Register Now</button>
+                            </div>
                         </div>
+                        </a>
                     </div>
-            
-                 
-                    <div class="event-countdown">
-                    </div>
-            
-                
-                    <div class="event-details">
-                        <h4 class="event-title">Quran, Hadith Daily Life</h4>
-                        <p class="event-location">
-                            <i class="fas fa-map-marker-alt"></i> Park Lane, London 
-                            <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
-                        </p>
-                        <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
-                        <button class="card-btn">Register Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="event-card">
-                   
-                    <div class="event-image">
-                        <img src="assets/images/quran.webp" alt="Quran Event">
-                        <div class="event-date">
-                            <span class="day">27</span>
-                            <span class="month">Dec</span>
+                    <div class="col-md-4 col-sm-12">
+                        <a href="detail.html">
+                        <div class="event-card">
+
+                            <div class="event-image">
+                                <img src="assets/images/quran.webp" alt="Quran Event">
+                                <div class="event-date">
+                                    <span class="day">27</span>
+                                    <span class="month">Dec</span>
+                                    fa-envelope      </div>
+                            </div>
+                            <div class="event-countdown">
+                            </div>
+                            <div class="event-details">
+                                <h4 class="event-title">Quran, Hadith Daily Life</h4>
+                                <p class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i> Park Lane, London
+                                    <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
+                                </p>
+                                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do ...</p>
+                                <button class="card-btn">Register Now</button>
+                            </div>
                         </div>
+                        </a>
                     </div>
-            
-                 
-                    <div class="event-countdown">
-                    </div>
-            
-                
-                    <div class="event-details">
-                        <h4 class="event-title">Quran, Hadith Daily Life</h4>
-                        <p class="event-location">
-                            <i class="fas fa-map-marker-alt"></i> Park Lane, London 
-                            <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
-                        </p>
-                        <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
-                        <button class="card-btn">Register Now</button>
+                    <div class="col-md-4 col-sm-12">
+                        <a href="detail.html">
+                        <div class="event-card">
+
+                            <div class="event-image">
+                                <img src="assets/images/quran.webp" alt="Quran Event">
+                                <div class="event-date">
+                                    <span class="day">27</span>
+                                    <span class="month">Dec</span>
+                                    fa-envelope      </div>
+                            </div>
+                            <div class="event-countdown">
+                            </div>
+                            <div class="event-details">
+                                <h4 class="event-title">Quran, Hadith Daily Life</h4>
+                                <p class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i> Park Lane, London
+                                    <span class="event-time"><i class="far fa-clock"></i> 9:30 am - 1:15 pm</span>
+                                </p>
+                                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do ...</p>
+                                <button class="card-btn">Register Now</button>
+                            </div>
+                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>  
-        </div> 
         </div>
     </section>
     <section>
@@ -197,10 +304,10 @@
             <div class="styled-background">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-md-9">
-                        <h1>
+                        <h1 class="z">
                             Join, Participate In Our Events
                         </h1>
-                        <p>Your Ideas For Noble Events - events@example.com</p>
+                        <p class="z">Your Ideas For Noble Events - events@example.com</p>
                     </div>
                     <div class="col-md-3 col-sm-12">
                         <div>
@@ -211,5 +318,46 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="footer-circle">
+                                <img src="https://www.bearcreekic.org/wp-content/uploads/isgh-150x150.png"
+                                    alt="footer icon">
+                            </div>
+                            <p class="text-center">Islamic Society of Greater Houston</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="px-3">
+                            <h3 class="mb-3">Contact</h3>
+                            <i class="fas fa-map-marker-alt"></i> 17250 Coventry Park Dr, Houston, TX 77084
+
+                            <div class="dot-divider my-3" style="width: 82%;"></div>
+
+                            <i class="fas fa-envelope"></i> 17250 Coventry Park Dr, Houston, TX 77084
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="px-3">
+                            <h3 class="res">Follow US</h3>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dot-divider"> </div>
+            <p class="mt-3">© 2023 Bear Creek Islamic Center, All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
